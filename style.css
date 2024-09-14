@@ -1,0 +1,114 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.obox{
+    border: solid 1px;
+    height: 200px;
+    display: flex;
+}
+#box1,#box2{
+    border: solid 1px;
+    height: 200px;
+}
+#box1{
+    width: 200px;
+}
+#box2{
+    width: 2000px;
+    text-align: center;
+    background-color: rgb(21, 183, 178);
+}
+#Clgname{
+    font-size: 60px;
+    color: darkblue;
+}
+#text1{
+    font-size: 35px;
+    color: darkviolet;
+}
+#text2{
+    font-size: 30px;
+    color: rgb(255, 0, 0);
+}
+#scrolltext{
+    font-size: 30px;
+    color: dodgerblue;
+    background-color: bisque;
+    font-weight: bold;
+}
+#navbox{
+    border: solid 1px;
+    text-decoration: underline;
+    height: 50px;
+}
+ul li{
+    border: solid 1px;
+    height: 50px;
+    width: 272px;
+    float: left;
+    text-align: center;
+    line-height: 49px;
+    background-color: skyblue;
+    border-radius: 20px;
+    margin: right 60px;
+}
+ul{
+ list-style: none;
+}
+ul li a{
+    color: red;
+    font-size: 30px;
+    text-decoration: none;
+}
+ul li ul li{
+    display: none;
+}
+ul li:hover ul li{
+    display: block;
+}
+ul li:hover{
+    background-color: aqua;
+}
+.outbox{
+    border: solid 1px;
+    height: 200px;
+    display: flex;
+}
+#in1,#in2,#in3{
+    border: solid 1px;
+    height: 200px;
+    z-index: -1;
+}
+#in1{
+    width: 777px;
+    background-image: url(img1.jpg);
+    background-repeat: no-repeat;
+    background-size: 777px 200px;
+    animation-name: imgchange;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+@keyframes imgchange{
+    10%{
+        background-image: url(img2.jpg);
+    }
+    20%{
+        background-image: url(img3.jpg);
+    }
+    30%{
+        background-image: url(img4.jpg);
+    }
+    40%{
+        background-image: url(img5.jpg);
+    }
+    50%{
+        background-image: url(img6.jpg);
+    }
+    60%{
+        background-image: url(img7.jpg);
+    }
+}
+#in2,#in3{
+    width: 777px;
+}
